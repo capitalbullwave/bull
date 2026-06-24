@@ -1,0 +1,227 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Features - Bull Wave Capital</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'css/features.css' %}">
+</head>
+
+<body>
+
+<div class="bg left"></div>
+<div class="bg right"></div>
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <a href="{% url 'home' %}" class="logo-box">
+            <img src="{% static 'image/logo.jpg' %}" alt="Bull Wave Capital Logo">
+
+            <div class="logo">
+                Bull Wave <span>Capital</span>
+            </div>
+        </a>
+
+        <ul class="nav-menu">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'features' %}" class="active">Features</a></li>
+            <li><a href="{% url 'insight' %}">Insights</a></li>
+            <li><a href="{% url 'plans' %}">Plans</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+
+    </div>
+
+</nav>
+
+<main>
+
+    <section class="hero">
+
+        <div>
+
+            <div class="badge">Platform Features</div>
+
+            <h1>
+                Smart Features For
+                <span>Modern Investors</span>
+            </h1>
+
+            <p>
+                Bull Wave Capital provides market insights,
+                learning support, trading guidance and investment
+                tools to help users make smarter decisions.
+            </p>
+
+            <div class="hero-actions">
+                <a href="{% url 'plans' %}" class="btn">View Plans</a>
+
+                <a href="{% url 'contact' %}" class="btn-outline">
+                    Talk To Expert
+                </a>
+            </div>
+
+        </div>
+
+        <div class="explore-card">
+
+            <div class="market-box">
+
+                <h3>Market Learning Hub</h3>
+
+                <p>
+                    Learn technical analysis, risk management,
+                    stock selection and disciplined trading methods.
+                </p>
+
+            </div>
+
+            <div class="signal">
+                <span>Daily Market Updates</span>
+                <strong>Available</strong>
+            </div>
+
+            <div class="signal">
+                <span>Trading Guidance</span>
+                <strong>Active</strong>
+            </div>
+
+            <div class="signal">
+                <span>Investor Support</span>
+                <strong>Live</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>Everything You Need</h2>
+
+            <p>
+                Explore powerful features designed for traders,
+                investors and learners.
+            </p>
+
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+                <div class="icon">📈</div>
+                <h3>Daily Market Updates</h3>
+                <p>
+                    Get regular stock market updates,
+                    trend analysis and important market movements.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Trading Signals</h3>
+                <p>
+                    Receive structured trading ideas based on
+                    technical levels and market momentum.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Technical Analysis</h3>
+                <p>
+                    Learn chart patterns, indicators,
+                    support-resistance and price action strategies.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💼</div>
+                <h3>Portfolio Guidance</h3>
+                <p>
+                    Manage investments with better planning,
+                    discipline and diversification.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛡️</div>
+                <h3>Risk Management</h3>
+                <p>
+                    Learn safer trading habits,
+                    capital protection and stop-loss discipline.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Learning Support</h3>
+                <p>
+                    Beginner-friendly stock market education
+                    to improve your investing knowledge.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+            <div class="footer-logo">
+                <img src="{% static 'image/logo.jpg' %}" alt="Bull Wave Capital Logo">
+                <div class="footer-logo-text">Bull Wave <span>Capital</span></div>
+            </div>
+
+            <p>
+                Smart investing and professional stock market guidance
+                designed for modern investors, traders and financial learners.
+            </p>
+        </div>
+
+        <div>
+            <h3>Company</h3>
+            <a href="{% url 'about' %}">About Us</a>
+            <a href="{% url 'services' %}">Services</a>
+            <a href="{% url 'features' %}">Features</a>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="{% url 'plans' %}">Plans & Pricing</a>
+            <a href="{% url 'insight' %}">Market Insights</a>
+            <a href="{% url 'contact' %}">Contact Us</a>
+        </div>
+
+        <div>
+            <h3>Legal</h3>
+            <a href="{% url 'privacy_policy' %}">Privacy Policy</a>
+            <a href="{% url 'terms' %}">Terms & Conditions</a>
+        </div>
+
+    </div>
+
+    <div class="copy">
+        <div>© 2026 Bull Wave Capital.</div>
+    </div>
+
+</footer>
+
+</body>
+</html>

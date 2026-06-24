@@ -1,0 +1,239 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy | Bull Wave Capital</title>
+  <meta name="description" content="Read the Privacy Policy of Bull Wave Capital. Learn how we collect, use, protect and manage user information." />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="author" content="Bull Wave Capital" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="{% static 'image/logo.jpg' %}" type="image/jpeg">
+  <link rel="stylesheet" href="{% static 'css/privacypolicy.css' %}">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <div class="gradient-ball ball-1" aria-hidden="true"></div>
+  <div class="gradient-ball ball-2" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="{% url 'home' %}" class="logo-box" aria-label="Bull Wave Capital Home">
+        <img src="{% static 'image/logo.jpg' %}" alt="Bull Wave Capital Logo" width="56" height="56">
+        <h2>Bull Wave <span>Capital</span></h2>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'features' %}">Features</a></li>
+          <li><a href="{% url 'insight' %}">Insights</a></li>
+          <li><a href="{% url 'plans' %}">Plans</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'services' %}">Services</a>
+    <a href="{% url 'features' %}">Features</a>
+    <a href="{% url 'insight' %}">Insights</a>
+    <a href="{% url 'plans' %}">Plans</a>
+    <a href="{% url 'contact' %}">Contact</a>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero reveal">
+      <div class="badge">🔒 Privacy & Security</div>
+
+      <h1>
+        Privacy Policy Of
+        <span>Bull Wave Capital</span>
+      </h1>
+
+      <p>
+        We respect your privacy and are committed to protecting your personal information
+        with transparent practices and responsible data handling.
+      </p>
+
+      <a href="#policy" class="hero-btn">Read Policy</a>
+    </section>
+
+    <section class="policy-section-area" id="policy">
+      <div class="policy-card reveal">
+
+        <article class="policy-item">
+          <div class="policy-number">01</div>
+          <div class="policy-content">
+            <h2>Introduction</h2>
+            <p>
+              Bull Wave Capital values your trust and is committed to protecting your
+              personal information and privacy.
+            </p>
+            <p>
+              By using our website, services or communication channels, you agree to the
+              practices described in this Privacy Policy.
+            </p>
+          </div>
+        </article>
+
+        <article class="policy-item">
+          <div class="policy-number">02</div>
+          <div class="policy-content">
+            <h2>Information We Collect</h2>
+            <ul>
+              <li>Full name</li>
+              <li>Email address</li>
+              <li>Phone number</li>
+              <li>Investment or service preferences</li>
+              <li>Website analytics and usage data</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="policy-item">
+          <div class="policy-number">03</div>
+          <div class="policy-content">
+            <h2>How We Use Information</h2>
+            <ul>
+              <li>To provide services, market insights and educational updates</li>
+              <li>To improve website performance and user experience</li>
+              <li>To respond to enquiries and provide support</li>
+              <li>To send service-related communication</li>
+              <li>To maintain platform security and prevent misuse</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="policy-item">
+          <div class="policy-number">04</div>
+          <div class="policy-content">
+            <h2>Data Protection</h2>
+            <p>
+              We use reasonable technical and organizational measures to protect user
+              information from unauthorized access, misuse or disclosure.
+            </p>
+            <p>
+              However, no online platform can guarantee complete security, and users should
+              also take care while sharing information online.
+            </p>
+          </div>
+        </article>
+
+        <article class="policy-item">
+          <div class="policy-number">05</div>
+          <div class="policy-content">
+            <h2>Cookies & Analytics</h2>
+            <p>
+              We may use cookies and analytics tools to understand user behavior, improve
+              website performance and personalize the browsing experience.
+            </p>
+          </div>
+        </article>
+
+        <article class="policy-item">
+          <div class="policy-number">06</div>
+          <div class="policy-content">
+            <h2>User Rights</h2>
+            <p>
+              Users may request access, correction or deletion of their personal data by
+              contacting Bull Wave Capital through the official contact page.
+            </p>
+          </div>
+        </article>
+
+        <article class="policy-item">
+          <div class="policy-number">07</div>
+          <div class="policy-content">
+            <h2>Third-Party Links</h2>
+            <p>
+              Our website may contain links to external websites. We are not responsible for
+              the privacy practices or content of third-party platforms.
+            </p>
+          </div>
+        </article>
+
+        <article class="policy-item">
+          <div class="policy-number">08</div>
+          <div class="policy-content">
+            <h2>Policy Updates</h2>
+            <p>
+              We may update this Privacy Policy from time to time. Any changes will be posted
+              on this page with the updated effective date where applicable.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="{% static 'image/logo.jpg' %}" alt="Bull Wave Capital Logo" width="52" height="52" loading="lazy">
+          <div class="footer-logo-text">Bull Wave <span>Capital</span></div>
+        </div>
+
+        <p>
+          Smart investing and professional market guidance designed for modern
+          investors and traders.
+        </p>
+
+        <a href="{% url 'contact' %}" class="footer-cta">Contact Bull Wave Capital →</a>
+      </div>
+
+      <div>
+        <h3>Company</h3>
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'services' %}">Services</a>
+        <a href="{% url 'features' %}">Features</a>
+        <a href="{% url 'plans' %}">Plans</a>
+      </div>
+
+      <div>
+        <h3>Resources</h3>
+        <a href="{% url 'insight' %}">Market Insights</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'features' %}">Features</a>
+      </div>
+
+      <div>
+        <h3>Legal</h3>
+        <a href="{% url 'terms' %}">Terms & Conditions</a>
+        <a href="{% url 'privacy_policy' %}" aria-current="page">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="copy">
+      <div>© 2026 Bull Wave Capital. All rights reserved.</div>
+
+      <div class="copy-links">
+        <a href="{% url 'terms' %}">Terms</a>
+        <a href="{% url 'privacy_policy' %}" aria-current="page">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'js/privacypolicy.js' %}"></script>
+</body>
+</html>

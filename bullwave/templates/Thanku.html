@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Thank You | Bull Wave Capital</title>
+  <meta name="description" content="Thank you for contacting Bull Wave Capital. Your message has been received successfully and our team will respond shortly." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Your same CSS can stay here -->
+</head>
+
+<body>
+
+  <div class="bg left" aria-hidden="true"></div>
+  <div class="bg right" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <div class="nav-container">
+
+      <a href="{% url 'home' %}" class="logo-box" aria-label="Bull Wave Capital Home">
+        <img src="{% static 'image/logo.jpg' %}" alt="Bull Wave Capital Logo">
+        <div class="logo">Bull Wave <span>Capital</span></div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li><a href="{% url 'features' %}">Features</a></li>
+          <li><a href="{% url 'insight' %}">Insights</a></li>
+          <li><a href="{% url 'plans' %}">Plans</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        ☰
+      </button>
+
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'services' %}">Services</a>
+      <a href="{% url 'features' %}">Features</a>
+      <a href="{% url 'insight' %}">Insights</a>
+      <a href="{% url 'plans' %}">Plans</a>
+      <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="thankyou-section">
+      <div class="thankyou-card">
+
+        <div class="success-icon" aria-hidden="true">✓</div>
+
+        <span class="small-tag">Message Sent Successfully</span>
+
+        <h1>
+          Thank You for Contacting
+          <span>Bull Wave Capital</span>
+        </h1>
+
+        <p>
+          We appreciate your interest in our services. Your message has been received
+          successfully and our team will review your inquiry shortly.
+        </p>
+
+        <p>
+          One of our representatives will contact you soon via email or phone with
+          the required assistance.
+        </p>
+
+        <div class="thankyou-info">
+          <div class="info-box">
+            <strong>Email Support</strong>
+            <span>capitalbullwave@gmail.com</span>
+          </div>
+
+          <div class="info-box">
+            <strong>Response Time</strong>
+            <span>Usually within 24 hours</span>
+          </div>
+        </div>
+
+        <div class="thankyou-buttons">
+          <a href="{% url 'home' %}" class="btn">Back to Home</a>
+          <a href="{% url 'contact' %}" class="btn-outline">Send Another Message</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-logo">
+          <img src="{% static 'image/logo.jpg' %}" alt="Bull Wave Capital Logo">
+          <div class="footer-logo-text">Bull Wave <span>Capital</span></div>
+        </div>
+
+        <p>
+          Smart investing and professional stock market guidance designed for
+          modern investors, traders and financial learners.
+        </p>
+      </div>
+
+      <div>
+        <h3>Company</h3>
+        <a href="{% url 'about' %}">About Us</a>
+        <a href="{% url 'services' %}">Services</a>
+        <a href="{% url 'features' %}">Features</a>
+        <a href="{% url 'contact' %}">Careers</a>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="{% url 'plans' %}">Plans & Pricing</a>
+        <a href="{% url 'insight' %}">Market Insights</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+      </div>
+
+      <div>
+        <h3>Legal</h3>
+        <a href="{% url 'privacy_policy' %}">Privacy Policy</a>
+        <a href="{% url 'terms' %}">Terms & Conditions</a>
+      </div>
+
+    </div>
+
+    <div class="copy">
+      © 2026 Bull Wave Capital. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("active");
+        menuBtn.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      document.querySelectorAll(".mobile-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+          menuBtn.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+          mobileMenu.classList.remove("active");
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
